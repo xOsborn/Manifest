@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifest | Home</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <div class="container">
+
+                <div class="header__inner">
+                    <a class="header__logo" href="#" >
+                        <img src="images/home/nav/Logo.png" alt="manifest">
+                    </a>
+                    <!--========== NAV ==========-->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__items">
+                                <a class="nav__links" href="index.html">home</a>
+                            </li>
+                            <li class="nav__items active">
+                                <a class="nav__links" href="#">about</a>
+                            </li>
+                            <li class="nav__items">
+                                <a class="nav__links" href="works.html">works</a>
+                            </li>
+                            <li class="nav__items">
+                                <a class="nav__links" href="blog.html">blog</a>
+                            </li>
+                            <li class="nav__items">
+                                <a class="nav__links" href="contact.html">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__right">
+                        <button class="header__search" type="button" id="search">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.331 11.0715L15.8859 14.6313C16.0447 14.8079 16.0368 15.0783 15.8681 15.2454L15.246 15.8684C15.1626 15.9526 15.049 16 14.9305 16C14.812 16 14.6985 15.9526 14.615 15.8684L11.0601 12.3085C10.9618 12.21 10.8726 12.1028 10.7935 11.9881L10.127 11.0982C9.02413 11.9801 7.6546 12.4602 6.24327 12.4598C3.33502 12.4699 0.807867 10.461 0.157951 7.62231C-0.491966 4.78365 0.90881 1.87288 3.53098 0.613257C6.15315 -0.646363 9.29689 0.0813446 11.101 2.36555C12.9052 4.64977 12.8882 7.88086 11.0601 10.1459L11.9489 10.76C12.0877 10.849 12.2159 10.9535 12.331 11.0715ZM1.79968 6.23008C1.79968 8.68763 3.78915 10.6799 6.24329 10.6799C7.42181 10.6799 8.55206 10.2111 9.3854 9.37656C10.2187 8.54206 10.6869 7.41024 10.6869 6.23008C10.6869 3.77252 8.69743 1.78027 6.24329 1.78027C3.78915 1.78027 1.79968 3.77252 1.79968 6.23008Z" fill="black"/>
+                            </svg>
+                        </button>
+
+                        <div class="popup-search" id="popup-search">
+                            <form class="popup-search__form form-search form medium" action="#">
+                                <div class="form-search__close">
+                                    <button class="form-search__close-btn" type="button" id="popup-search-close-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <div class="input-search__wrapper medium">
+                                    <input class="search" type="search" id="search" required>
+                                    <label for="search">Search</label>
+                                    <button class="search-btn" type="submit" id="search-btn">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.331 11.0715L15.8859 14.6313C16.0447 14.8079 16.0368 15.0783 15.8681 15.2454L15.246 15.8684C15.1626 15.9526 15.049 16 14.9305 16C14.812 16 14.6985 15.9526 14.615 15.8684L11.0601 12.3085C10.9618 12.21 10.8726 12.1028 10.7935 11.9881L10.127 11.0982C9.02413 11.9801 7.6546 12.4602 6.24327 12.4598C3.33502 12.4699 0.807867 10.461 0.157951 7.62231C-0.491966 4.78365 0.90881 1.87288 3.53098 0.613257C6.15315 -0.646363 9.29689 0.0813446 11.101 2.36555C12.9052 4.64977 12.8882 7.88086 11.0601 10.1459L11.9489 10.76C12.0877 10.849 12.2159 10.9535 12.331 11.0715ZM1.79968 6.23008C1.79968 8.68763 3.78915 10.6799 6.24329 10.6799C7.42181 10.6799 8.55206 10.2111 9.3854 9.37656C10.2187 8.54206 10.6869 7.41024 10.6869 6.23008C10.6869 3.77252 8.69743 1.78027 6.24329 1.78027C3.78915 1.78027 1.79968 3.77252 1.79968 6.23008Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="burger" id="burger">
+                            <div class="burger__item"></div>
+                        </div>
+                        <!--========== BURGER MENU ==========-->
+                        <nav class="burger-menu" id="burger-menu">
+                            <ul class="burger-menu__list">
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Home</a>
+                                </li>
+                                <li class="burger-menu__items active">
+                                    <a class="burger-menu__link" href="#">About</a>
+                                </li>
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Works</a>
+                                </li>
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Blog</a>
+                                </li>
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--========== ABOUT ==========-->
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <!--========== ABOUT COLUMN LEFT ==========-->
+                        <div class="about__column">
+                            <h1 class="about__title">About</h1>
+                            <h3 class="about__subtitle">
+                                I’m Manifest
+                                Full-time UI/UX designer
+                                Head of Design at VeronaLabs.com
+                            </h3>
+                            <div class="about__img">
+                                <img src="images/about/about-avatar.png" alt="" class="about__avatar">
+                            </div>
+                        </div>
+                        <!--========== ABOUT COLUMN RIGHT ==========-->
+                        <div class="about__column">
+                            <p class="about__text">
+                                I was born in January 1990. After getting my Degree in computer science in 2002, I persuaded my higher study in Human Computer Interaction Design. I got my first job as Graphic Designer in the year 2008. After getting experience in graphic for a year, I moved to UI-UX Designing.
+                            </p>
+                            <p class="about__text">
+                                In 2010, I decided to work as a Freelance Web, UI-UX & Mobile Interface Designer. I find myself still in the learning phase and have strong desire to achieve as many skills as I can.
+                            </p>
+                            <button class="about__btn button" type="button">
+                                Resume
+                                <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.5303 6.53033C23.8232 6.23744 23.8232 5.76257 23.5303 5.46967L18.7574 0.696701C18.4645 0.403807 17.9896 0.403807 17.6967 0.696701C17.4038 0.989594 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM-6.55671e-08 6.75L23 6.75L23 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!--========== FOOTER COLUMN LEFT ==========-->
+                    <div class="footer__column footer__column--left">
+                        <h1 class="footer__title">Need a project?</h1>
+                        <div class="footer__contacts">
+                            <a class="footer__phone" href="tel:+2395550108">(239) 555-0108</a>
+                            <a class="footer__mail" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
+                        </div>
+                    </div>
+                     <!--========== FOOTER COLUMN CENTER ==========-->
+                    <div class="footer__column footer__column--center">
+                        <ul class="footer-socials">
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Dribbble
+                                </a>
+                            </li>
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--========== FOOTER COLUMN RIGHT ==========-->
+                    <div class="footer__column footer__column--right">
+                        <p class="footer__copyright">© Copyright Manifest Theme. Allrights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Подключение скриптов -->
+    <script src="js/main.min.js"></script>
+</body>
+</html>

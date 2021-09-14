@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifest | Work</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <div class="container">
+
+                <div class="header__inner">
+                    <a class="header__logo" href="#" >
+                        <img src="images/home/nav/Logo.png" alt="manifest">
+                    </a>
+                    <!--========== NAV ==========-->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__items">
+                                <a class="nav__links" href="index.html">home</a>
+                            </li>
+                            <li class="nav__items">
+                                <a class="nav__links" href="about.html">about</a>
+                            </li>
+                            <li class="nav__items active">
+                                <a class="nav__links" href="works.html">works</a>
+                            </li>
+                            <li class="nav__items">
+                                <a class="nav__links" href="blog.html">blog</a>
+                            </li>
+                            <li class="nav__items">
+                                <a class="nav__links" href="contact.html    ">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__right">
+                        <button class="header__search" type="button" id="search">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.331 11.0715L15.8859 14.6313C16.0447 14.8079 16.0368 15.0783 15.8681 15.2454L15.246 15.8684C15.1626 15.9526 15.049 16 14.9305 16C14.812 16 14.6985 15.9526 14.615 15.8684L11.0601 12.3085C10.9618 12.21 10.8726 12.1028 10.7935 11.9881L10.127 11.0982C9.02413 11.9801 7.6546 12.4602 6.24327 12.4598C3.33502 12.4699 0.807867 10.461 0.157951 7.62231C-0.491966 4.78365 0.90881 1.87288 3.53098 0.613257C6.15315 -0.646363 9.29689 0.0813446 11.101 2.36555C12.9052 4.64977 12.8882 7.88086 11.0601 10.1459L11.9489 10.76C12.0877 10.849 12.2159 10.9535 12.331 11.0715ZM1.79968 6.23008C1.79968 8.68763 3.78915 10.6799 6.24329 10.6799C7.42181 10.6799 8.55206 10.2111 9.3854 9.37656C10.2187 8.54206 10.6869 7.41024 10.6869 6.23008C10.6869 3.77252 8.69743 1.78027 6.24329 1.78027C3.78915 1.78027 1.79968 3.77252 1.79968 6.23008Z" fill="black"/>
+                            </svg>
+                        </button>
+
+                        <div class="popup-search" id="popup-search">
+                            <form class="popup-search__form form-search form medium" action="#">
+                                <div class="form-search__close">
+                                    <button class="form-search__close-btn" type="button" id="popup-search-close-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <div class="input-search__wrapper medium">
+                                    <input class="search" type="search" id="search" required>
+                                    <label for="search">Search</label>
+                                    <button class="search-btn" type="submit" id="search-btn">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.331 11.0715L15.8859 14.6313C16.0447 14.8079 16.0368 15.0783 15.8681 15.2454L15.246 15.8684C15.1626 15.9526 15.049 16 14.9305 16C14.812 16 14.6985 15.9526 14.615 15.8684L11.0601 12.3085C10.9618 12.21 10.8726 12.1028 10.7935 11.9881L10.127 11.0982C9.02413 11.9801 7.6546 12.4602 6.24327 12.4598C3.33502 12.4699 0.807867 10.461 0.157951 7.62231C-0.491966 4.78365 0.90881 1.87288 3.53098 0.613257C6.15315 -0.646363 9.29689 0.0813446 11.101 2.36555C12.9052 4.64977 12.8882 7.88086 11.0601 10.1459L11.9489 10.76C12.0877 10.849 12.2159 10.9535 12.331 11.0715ZM1.79968 6.23008C1.79968 8.68763 3.78915 10.6799 6.24329 10.6799C7.42181 10.6799 8.55206 10.2111 9.3854 9.37656C10.2187 8.54206 10.6869 7.41024 10.6869 6.23008C10.6869 3.77252 8.69743 1.78027 6.24329 1.78027C3.78915 1.78027 1.79968 3.77252 1.79968 6.23008Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="burger" id="burger">
+                            <div class="burger__item"></div>
+                        </div>
+                         <!--========== BURGER MENU ==========-->
+                         <nav class="burger-menu" id="burger-menu">
+                            <ul class="burger-menu__list">
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Home</a>
+                                </li>
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">About</a>
+                                </li>
+                                <li class="burger-menu__items active">
+                                    <a class="burger-menu__link" href="#">Works</a>
+                                </li>
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Blog</a>
+                                </li>
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--========== WORK ==========-->
+            <div class="container">
+                <section class="work">
+                    <div class="work__inner">
+                        <h5 class="work__suptitle">CASE STUDY</h5>
+                        <h1 class="work__title">AI Fashion Platform</h1>
+                        <div class="work__img">
+                            <img src="images/work/work-img.jpg" alt="work-img">
+                        </div>
+                        <!--========== WORK DESCR ==========-->
+                        <div class="work__descr">
+                            <!--========== WORK OVERVIEW ==========-->
+                            <div class="work-overview">
+                                <h3 class="work-overview__title">Project Overview</h3>
+                                <p class="work-overview__text">
+                                    FashHanger is a bespoke sustainable high-fashion accessory company based out of Berlin, currently operated by Siesly and her sister Ashely. They needed help for a big rebrand and wanted to relaunch their website.
+                                </p>
+                                <p class="work-overview__text">
+                                    Their goals were simple, create a unique e-commerce store that bring a wonderful shopping experience at every stage of the buyer’s journey.
+                                </p>
+                            </div>
+                            <!--========== WORK SPECIFICATIONS ==========-->
+                            <div class="work-specifications">
+                                <div class="work-specifications__specification">
+                                    <h3 class="work-specifications__title">Year</h3>
+                                    <h4 class="work-specifications__subtitle">2019</h4>
+                                </div>
+                                <div class="work-specifications__specification">
+                                    <h3 class="work-specifications__title">Platform</h3>
+                                    <h4 class="work-specifications__subtitle">Shopify, Webflow</h4>
+                                </div>
+                                <div class="work-specifications__specification">
+                                    <h3 class="work-specifications__title">Role</h3>
+                                    <h4 class="work-specifications__subtitle">Research, Design</h4>
+                                </div>
+                                <div class="work-specifications__specification">
+                                    <h3 class="work-specifications__title">Deliverables</h3>
+                                    <h4 class="work-specifications__subtitle">www.fashhanger.com</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--========== WORK SECTION 1 ==========-->
+                <section class="work-section">
+                    <h3 class="work-section__title">User Research and Personas</h3>
+                    <div class="work-section__img">
+                        <img src="images/work/work-img02.jpg" alt="work-img02">
+                    </div>
+                    <p class="work-section__text">
+                        Who is your user? Indicate her KEY personality traits and help round out her overall image.
+                    </p>
+                    <p class="work-section__text">
+                        Originally, the personality section of this persona was based off the Myers Briggs personality test. According to the Myers Briggs, there are 16 potential user personality types. Our template integrates questions from this online personality test example into a series of sliding bar graphics. If you’re confused as to what the sliders mean, check out the Myers Briggs basics article.           
+                    </p>
+                </section>
+                <!--========== WORK SECTION 2 ==========-->
+                <section class="work-section">
+                    <h3 class="work-section__title">Initial Sketches</h3>
+                    <div class="work-section__img">
+                        <img src="images/work/work-img03.jpg" alt="work-img03">
+                    </div>
+                    <p class="work-section__text">
+                        In the beginning, It’s just about brainstorming.
+                    </p>
+                    <p class="work-section__text">
+                        I list out a jumble of words and draw tiny sketches related to what I’m working on (and find the parallels later). Personally, I prefer paper with a grid so I can convey things responsively. Most of the time perfection isn’t an issue and the sketches are just for me.     
+                    </p>
+                </section>
+                <!--========== WORK SECTION 3 ==========-->
+                <section class="work-section">
+                    <h3 class="work-section__title">Final Design</h3>
+                    <div class="work-section__img">
+                        <img src="images/work/work-img04.jpg" alt="work-img03">
+                    </div>
+                    <p class="work-section__text">
+                        I played with adding a wireframe of the website flow that would lead you in to each screen. For each of those screens I added a floating footer that allows users to see where they are in that particular flow and jump around as needed.” We’re digging this InVision-made wireframe.   
+                    </p>
+                </section>
+            </div>
+        </main>
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!--========== FOOTER COLUMN LEFT ==========-->
+                    <div class="footer__column footer__column--left">
+                        <h1 class="footer__title">Need a project?</h1>
+                        <div class="footer__contacts">
+                            <a class="footer__phone" href="tel:+2395550108">(239) 555-0108</a>
+                            <a class="footer__mail" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
+                        </div>
+                    </div>
+                     <!--========== FOOTER COLUMN CENTER ==========-->
+                    <div class="footer__column footer__column--center">
+                        <ul class="footer-socials">
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Dribbble
+                                </a>
+                            </li>
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--========== FOOTER COLUMN RIGHT ==========-->
+                    <div class="footer__column footer__column--right">
+                        <p class="footer__copyright">© Copyright Manifest Theme. Allrights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Подключение скриптов -->
+    <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifest | Home</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <div class="container">
+
+                <div class="header__inner">
+                    <a class="header__logo" href="#" >
+                        <img src="images/home/nav/Logo.png" alt="manifest">
+                    </a>
+                    <!--========== NAV ==========-->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__items">
+                                <a class="nav__links" href="#">home</a>
+                            </li>
+                            <li class="nav__items">
+                                <a class="nav__links" href="#">about</a>
+                            </li>
+                            <li class="nav__items">
+                                <a class="nav__links" href="#">works</a>
+                            </li>
+                            <li class="nav__items">
+                                <a class="nav__links" href="#">blog</a>
+                            </li>
+                            <li class="nav__items active">
+                                <a class="nav__links" href="#">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__right">
+                        <button class="header__search" type="button" id="search">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.331 11.0715L15.8859 14.6313C16.0447 14.8079 16.0368 15.0783 15.8681 15.2454L15.246 15.8684C15.1626 15.9526 15.049 16 14.9305 16C14.812 16 14.6985 15.9526 14.615 15.8684L11.0601 12.3085C10.9618 12.21 10.8726 12.1028 10.7935 11.9881L10.127 11.0982C9.02413 11.9801 7.6546 12.4602 6.24327 12.4598C3.33502 12.4699 0.807867 10.461 0.157951 7.62231C-0.491966 4.78365 0.90881 1.87288 3.53098 0.613257C6.15315 -0.646363 9.29689 0.0813446 11.101 2.36555C12.9052 4.64977 12.8882 7.88086 11.0601 10.1459L11.9489 10.76C12.0877 10.849 12.2159 10.9535 12.331 11.0715ZM1.79968 6.23008C1.79968 8.68763 3.78915 10.6799 6.24329 10.6799C7.42181 10.6799 8.55206 10.2111 9.3854 9.37656C10.2187 8.54206 10.6869 7.41024 10.6869 6.23008C10.6869 3.77252 8.69743 1.78027 6.24329 1.78027C3.78915 1.78027 1.79968 3.77252 1.79968 6.23008Z" fill="black"/>
+                            </svg>
+                        </button>
+
+                        <div class="popup-search" id="popup-search">
+                            <form class="popup-search__form form-search form medium" action="#">
+                                <div class="form-search__close">
+                                    <button class="form-search__close-btn" type="button" id="popup-search-close-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <div class="input-search__wrapper medium">
+                                    <input class="search" type="search" id="search" required>
+                                    <label for="search">Search</label>
+                                    <button class="search-btn" type="submit" id="search-btn">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.331 11.0715L15.8859 14.6313C16.0447 14.8079 16.0368 15.0783 15.8681 15.2454L15.246 15.8684C15.1626 15.9526 15.049 16 14.9305 16C14.812 16 14.6985 15.9526 14.615 15.8684L11.0601 12.3085C10.9618 12.21 10.8726 12.1028 10.7935 11.9881L10.127 11.0982C9.02413 11.9801 7.6546 12.4602 6.24327 12.4598C3.33502 12.4699 0.807867 10.461 0.157951 7.62231C-0.491966 4.78365 0.90881 1.87288 3.53098 0.613257C6.15315 -0.646363 9.29689 0.0813446 11.101 2.36555C12.9052 4.64977 12.8882 7.88086 11.0601 10.1459L11.9489 10.76C12.0877 10.849 12.2159 10.9535 12.331 11.0715ZM1.79968 6.23008C1.79968 8.68763 3.78915 10.6799 6.24329 10.6799C7.42181 10.6799 8.55206 10.2111 9.3854 9.37656C10.2187 8.54206 10.6869 7.41024 10.6869 6.23008C10.6869 3.77252 8.69743 1.78027 6.24329 1.78027C3.78915 1.78027 1.79968 3.77252 1.79968 6.23008Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="burger" id="burger">
+                            <div class="burger__item"></div>
+                        </div>
+                        <!--========== BURGER MENU ==========-->
+                        <nav class="burger-menu" id="burger-menu">
+                            <ul class="burger-menu__list">
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Home</a>
+                                </li>
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">About</a>
+                                </li>
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Works</a>
+                                </li>
+                                <li class="burger-menu__items">
+                                    <a class="burger-menu__link" href="#">Blog</a>
+                                </li>
+                                <li class="burger-menu__items active">
+                                    <a class="burger-menu__link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <div class="container">
+                <!--========== CONTACT ==========-->
+                <section class="contact">
+                    <div class="contact__inner">
+                        <div class="contact__row contact__row--top">
+                            <!--========== CONTACT COLUMN LEFT ==========-->
+                            <div class="contact__column contact__column--left">
+                                <h1 class="contact__title">Contact Us</h1>
+                            </div>
+                            <!--========== CONTACT COLUMN RIGHT ==========-->
+                            <div class="contact__column contact__column--right">    
+                                <h4 class="contact__descr">
+                                    If you need our help with your user account, have questions about how to use the platform or are experiencing technical difficulties, please do not hesitate to contact us.
+                                </h4>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__row contact__row--bottom">
+                            <!--========== CONTACT COLUMN LEFT ==========-->
+                            <div class="contact__column contact__column--left">
+                                <!--========== CONTACT INFO ==========-->
+                                <div class="contact-info">
+                                    <h3 class="contact-info__title">Contact information</h3>
+                                    <h6 class="contact-info__address">486 Rahi street, Berlin .98 Germany</h6>
+                                    <a href="tel:48601366816" class="contact-info__tel link">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5541 20.3712C13.7167 20.3696 11.9081 19.9173 10.2879 19.0542L9.78795 18.7775C6.33356 16.9273 3.50154 14.1061 1.64429 10.665L1.36654 10.1669C0.477536 8.54373 0.00791893 6.72569 6.98594e-07 4.87664V4.13511C-0.000468563 3.54516 0.23549 2.97943 0.655493 2.56352L2.53309 0.693099C2.71543 0.510039 2.97283 0.421806 3.22964 0.454326C3.48646 0.486847 3.71351 0.636428 3.84407 0.859113L6.34383 5.13119C6.59662 5.56602 6.52363 6.11593 6.16607 6.47036L4.06628 8.56213C3.8919 8.73394 3.85126 8.99933 3.96628 9.21512L4.35514 9.94558C5.75171 12.5226 7.8762 14.6351 10.4657 16.0217L11.1989 16.4201C11.4155 16.5347 11.6819 16.4942 11.8544 16.3205L13.9542 14.2287C14.31 13.8725 14.862 13.7998 15.2985 14.0516L19.587 16.5418C19.8105 16.6719 19.9607 16.8981 19.9933 17.1539C20.026 17.4098 19.9374 17.6662 19.7537 17.8478L17.8761 19.7182C17.4585 20.1366 16.8906 20.3717 16.2984 20.3712H15.5541Z"/>
+                                        </svg>
+                                        +48 601 366 816
+                                    </a>
+                                    <a href="mailto:company@support.com" class="contact-info__mail link">
+                                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0.252563H18C19.1046 0.252563 20 1.14456 20 2.2449V14.1989C20 15.2993 19.1046 16.1913 18 16.1913H2C0.89543 16.1913 0 15.2993 0 14.1989V2.2449C0 1.14456 0.89543 0.252563 2 0.252563ZM11.6499 11.6588L17.9999 7.22578V5.13379L10.6499 10.2641C10.2591 10.5344 9.74081 10.5344 9.34994 10.2641L1.99994 5.13379V7.22578L8.34994 11.6588C9.34089 12.3488 10.659 12.3488 11.6499 11.6588Z"/>
+                                        </svg>
+                                        company@support.com
+                                    </a>
+                                </div>
+
+                                <!--========== CONTACT SOCIAL ==========-->
+                                <div class="contact-social">
+                                    <h3 class="contact-social__title">Follow Us</h3>
+                                    <ul class="contact-social__list social-list">
+                                        <li class="contact-social__items social-list__items">
+                                            <a class="social-list__link" href="#">
+                                                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.398 3.22905H5.746C5.25778 3.22905 4.862 3.632 4.862 4.12905V6.82905H8.398C8.49854 6.82678 8.5939 6.8744 8.65368 6.95674C8.71345 7.03908 8.73019 7.14586 8.69856 7.24305L8.0444 9.22305C7.98412 9.40478 7.81732 9.52763 7.62892 9.52905H4.862V16.2791C4.862 16.5276 4.66411 16.7291 4.42 16.7291H2.21C1.96589 16.7291 1.768 16.5276 1.768 16.2791V9.52905H0.442C0.19789 9.52905 0 9.32758 0 9.07905V7.27905C0 7.03052 0.19789 6.82905 0.442 6.82905H1.768V4.12905C1.768 2.14083 3.35112 0.529053 5.304 0.529053H8.398C8.64211 0.529053 8.84 0.730525 8.84 0.979053V2.77905C8.84 3.02758 8.64211 3.22905 8.398 3.22905Z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="contact-social__items social-list__items">
+                                            <a class="social-list__link" href="#">
+                                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18.796 2.96137C18.3103 3.61732 17.7232 4.18952 17.0574 4.65586C17.0574 4.82721 17.0574 4.99856 17.0574 5.17943C17.0628 8.29118 15.8351 11.2749 13.6498 13.4618C11.4644 15.6487 8.50415 16.8558 5.43257 16.8124C3.65683 16.8184 1.90382 16.4079 0.310872 15.6129C0.22498 15.575 0.169581 15.4889 0.169907 15.394V15.2893C0.169907 15.1526 0.279301 15.0417 0.414245 15.0417C2.15976 14.9835 3.84301 14.3707 5.22583 13.2901C3.64589 13.2579 2.22435 12.3103 1.57015 10.8531C1.53711 10.7735 1.5474 10.6822 1.5973 10.6123C1.64721 10.5423 1.72952 10.5037 1.81449 10.5104C2.29467 10.5593 2.77964 10.514 3.24293 10.3771C1.49881 10.0106 0.188305 8.54453 0.000750257 6.75017C-0.00591569 6.66409 0.0321828 6.58072 0.101282 6.53016C0.170382 6.47961 0.260494 6.46919 0.339065 6.50266C0.807109 6.71177 1.31236 6.8219 1.82389 6.82633C0.295629 5.81072 -0.364477 3.87899 0.216895 2.12364C0.276907 1.95307 0.421084 1.82707 0.596444 1.79193C0.771805 1.75679 0.952481 1.81771 1.07208 1.95229C3.13437 4.17462 5.96799 5.4989 8.97548 5.6459C8.89844 5.33466 8.86055 5.0148 8.8627 4.69393C8.89083 3.01147 9.91899 1.51269 11.4658 0.899275C13.0127 0.28586 14.7721 0.679209 15.9203 1.89517C16.703 1.7442 17.4597 1.478 18.1663 1.10504C18.2181 1.07232 18.2837 1.07232 18.3355 1.10504C18.3678 1.15747 18.3678 1.22396 18.3355 1.2764C17.9932 2.06995 17.415 2.73553 16.6815 3.18032C17.3239 3.1049 17.9549 2.95148 18.561 2.72338C18.6121 2.6882 18.6792 2.6882 18.7302 2.72338C18.773 2.74318 18.8049 2.78106 18.8176 2.82691C18.8303 2.87277 18.8224 2.92195 18.796 2.96137Z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="contact-social__items social-list__items">
+                                            <a class="social-list__link" href="#">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.60367C0 1.55106 0.89543 0.697754 2 0.697754C2.53043 0.697754 3.03914 0.898555 3.41421 1.25598C3.78929 1.61341 4 2.09819 4 2.60367C4 3.65628 3.10457 4.50959 2 4.50959C0.89543 4.50959 0 3.65628 0 2.60367ZM17.5 10.6178C17.5345 8.55453 16.0574 6.74651 13.95 6.27229C12.5377 5.9825 11.0657 6.36251 10 7.29196V6.89172C10 6.62856 9.77614 6.41524 9.5 6.41524H7C6.72386 6.41524 6.5 6.62856 6.5 6.89172V16.4213C6.5 16.6845 6.72386 16.8978 7 16.8978H9.5C9.77614 16.8978 10 16.6845 10 16.4213V11.0466C9.9753 10.0896 10.6752 9.25379 11.66 9.06446C12.2463 8.96801 12.8473 9.12536 13.2996 9.49377C13.752 9.86219 14.0087 10.4034 14 10.9704V16.4213C14 16.6845 14.2239 16.8978 14.5 16.8978H17C17.2761 16.8978 17.5 16.6845 17.5 16.4213V10.6178ZM4 6.89187V16.4212C4 16.6844 3.77614 16.8977 3.5 16.8977H1C0.723858 16.8977 0.5 16.6844 0.5 16.4212V6.89187C0.5 6.62873 0.723858 6.41541 1 6.41541H3.5C3.77614 6.41541 4 6.62873 4 6.89187Z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="contact-social__items social-list__items">
+                                            <a class="social-list__link" href="#">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9003 0.781982C3.9848 0.781982 0 4.40848 0 8.88198C0 13.3555 3.9848 16.982 8.9003 16.982C13.8158 16.982 17.8006 13.3555 17.8006 8.88198C17.8006 6.73373 16.8629 4.67346 15.1938 3.15442C13.5246 1.63537 11.2608 0.781982 8.9003 0.781982ZM16.0204 8.88221C15.0011 8.60366 13.9428 8.46176 12.8786 8.46097C12.2454 8.46866 11.6142 8.52557 10.9917 8.63108C10.7692 8.13693 10.5378 7.65899 10.2886 7.18104C11.7523 6.51541 13.087 5.63712 14.2403 4.58069C15.3955 5.76603 16.0294 7.29776 16.0204 8.88221ZM9.67458 6.11175C10.9952 5.5089 12.1979 4.71265 13.2347 3.75482C11.9931 2.88165 10.4694 2.40615 8.90026 2.40222C8.32413 2.40434 7.75038 2.4696 7.19141 2.59661C8.11973 3.70688 8.95005 4.88226 9.67458 6.11175ZM5.89211 3.01758C6.85673 4.14995 7.71705 5.35282 8.46431 6.61394C6.901 7.16951 5.23848 7.45784 3.56022 7.46444C3.03378 7.45921 2.50797 7.42947 1.98486 7.37534C2.49059 5.45725 3.92878 3.85324 5.89211 3.01758ZM1.77979 8.57416V8.88196C1.78391 10.4802 2.43689 12.0207 3.61324 13.2074C4.99814 11.1578 7.15598 9.63735 9.68324 8.93056C9.49634 8.50937 9.28274 8.10437 9.06914 7.69937L9.06912 7.69934C7.31789 8.34194 5.44805 8.67459 3.55984 8.67946C2.96468 8.67758 2.37021 8.64242 1.77979 8.57416ZM4.61035 14.0414C5.83119 12.1188 7.81573 10.6954 10.1552 10.0645C10.781 11.6382 11.2255 13.2669 11.4814 14.9243C9.18074 15.748 6.57426 15.4162 4.61035 14.0495V14.0414ZM11.4722 9.78921C12.0402 11.2668 12.4631 12.7873 12.736 14.3329C14.3702 13.3832 15.5081 11.868 15.8867 10.1375C14.9166 9.8434 13.9009 9.69299 12.8784 9.69202C12.4078 9.6959 11.938 9.72837 11.4722 9.78921Z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--========== CONTACT COLUMN RIGHT ==========-->
+                            <div class="contact__column contact__column--right">
+                                <!--========== CONTACT FORM ==========-->
+                                <form class="contact-form" action="#">
+                                    <div class="input-wrapper">
+                                        <label class="input-wrapper__label" for="name">Name*</label>
+                                        <input class="input-wrapper__input" type="text" placeholder="Walter Moss" required id="name">
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <label class="input-wrapper__label" for="name">Email*</label>
+                                        <input class="input-wrapper__input" type="email" placeholder="Info@manifest.com" required id="email">
+                                    </div>
+
+                                    <div class="contact-select select">
+                                        <div class="select__header" id="select-header">
+                                            <span class="select__current">Reason for contact</span>
+                                            <div class="select__icon">
+                                                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <rect width="17" height="10" fill="url(#pattern0)"/>
+                                                    <defs>
+                                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                    <use xlink:href="#image0" transform="translate(0 -0.00703488) scale(0.00116279 0.00197674)"/>
+                                                    </pattern>
+                                                    <image id="image0" width="860" height="513" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA1wAAAIBCAYAAABdgr5ZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGymlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA0LTI1VDEwOjUwOjM2KzA0OjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wNi0wNVQxNDo1MTo0MSswNDozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNi0wNVQxNDo1MTo0MSswNDozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2YWRjMmMxZi1jYmM5LTFlNGYtOGZiMy03ZGU5MWNmODE0MDUiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNzIwYjIzOC03ZTAzLWQ3NDUtYWRhMy0yMmNhNGU0NDM1YjYiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMDliNzI2NS03YjcwLWM5NGItOGQwNS1hN2FmYThjNGM2YzIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjIwOWI3MjY1LTdiNzAtYzk0Yi04ZDA1LWE3YWZhOGM0YzZjMiIgc3RFdnQ6d2hlbj0iMjAyMC0wNC0yNVQxMDo1MDozNiswNDozMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpmZDZkZDRhNS04ZTZlLWY3NGYtODg2Yy05NTMyNTlkYjMyNWUiIHN0RXZ0OndoZW49IjIwMjAtMDYtMDVUMTQ6NTE6NDErMDQ6MzAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NmFkYzJjMWYtY2JjOS0xZTRmLThmYjMtN2RlOTFjZjgxNDA1IiBzdEV2dDp3aGVuPSIyMDIwLTA2LTA1VDE0OjUxOjQxKzA0OjMwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+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"/>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul class="select__body">
+                                            <li class="select__items">First Reason</li>
+                                            <li class="select__items">Second Reason</li>
+                                            <li class="select__items">Third Reason</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <label class="input-wrapper__label" for="name">Message*</label>
+                                        <input class="input-wrapper__input" type="text" placeholder="Hi there ..." required id="message">
+                                    </div>
+                                    <button class="contact-form__btn button" type="submit">
+                                        Send
+                                        <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.5303 6.53033C23.8232 6.23744 23.8232 5.76257 23.5303 5.46967L18.7574 0.696701C18.4645 0.403807 17.9896 0.403807 17.6967 0.696701C17.4038 0.989594 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM-6.55671e-08 6.75L23 6.75L23 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" "/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!--========== FOOTER COLUMN LEFT ==========-->
+                    <div class="footer__column footer__column--left">
+                        <h1 class="footer__title">Need a project?</h1>
+                        <div class="footer__contacts">
+                            <a class="footer__phone" href="tel:+2395550108">(239) 555-0108</a>
+                            <a class="footer__mail" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
+                        </div>
+                    </div>
+                     <!--========== FOOTER COLUMN CENTER ==========-->
+                    <div class="footer__column footer__column--center">
+                        <ul class="footer-socials">
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Dribbble
+                                </a>
+                            </li>
+                            <li class="footer-socials__items">
+                                <a class="footer-socials__links" href="#">
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--========== FOOTER COLUMN RIGHT ==========-->
+                    <div class="footer__column footer__column--right">
+                        <p class="footer__copyright">© Copyright Manifest Theme. Allrights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Подключение скриптов -->
+    <script src="js/main.min.js"></script>
+</body>
+</html>
